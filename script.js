@@ -11,7 +11,7 @@ if(document.documentElement.clientWidth <768){
 
 const audio = new Audio("");
 
-let currentsize = 3;
+let currentsize = 4;
 let arr = [];
 let linearr = [];
 let currentarr = [];
