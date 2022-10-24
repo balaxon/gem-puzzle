@@ -1,0 +1,287 @@
+@font-face{
+  font-family: Arimo-Bold;
+  src: url(assets/fonts/Arimo-Bold.ttf);
+}
+
+@font-face{
+  font-family: Arimo-Medium;
+  src: url(assets/fonts/Arimo-Medium.ttf);
+}
+
+body {
+  margin: 0;
+}
+
+.content {
+  width: 1280px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: 360px 110px 120px 180px;
+  justify-content: space-between;
+  padding: 0 150px 0 150px;
+}
+
+.navigation-button {
+  border: 0px;
+  border-radius: 10px;
+  font-family: 'Arimo-Bold';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 130%;
+  background-color: #0D9095;
+  color: #ffffff;
+}
+
+.navigation-button:hover {
+  cursor: pointer;
+  background-color: #0D8095;
+}
+
+.navigation-button:active {
+  cursor: pointer;
+  background-color: #918095;
+}
+
+.information {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 150px 0 150px;
+  font-family: 'Arimo-Bold';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 130%;
+}
+
+.field {
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(4, 150px);
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.cell {
+  width: 198px;
+  height: 198px;
+  text-align: center;
+  margin: auto;
+  font-family: 'Arimo-Bold';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 130%;
+  user-select: none;
+  border: 1px solid #333333;
+}
+
+@keyframes slideright {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideleft {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slidetop {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes slidedown {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+.cell:hover {
+  cursor: pointer;
+}
+
+.cell-item {
+  margin: auto;
+}
+
+.size {
+  margin: 0;
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'Arimo-Bold';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  user-select: none;
+}
+
+.link-sizes {
+  margin-left: 15px;
+}
+
+.musicdiv {
+  width: 150px;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.music {
+  transform:scale(2);
+  cursor: pointer;
+}
+
+.labelmusic {
+  text-align: center;
+  font-family: 'Arimo-Bold';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+.modalsave {
+  position: relative;
+  width: 600px;
+  top: -600px;
+  margin: auto;
+  box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+  background: white;
+}
+
+.modalheader{
+  text-align: center;
+  font-family: 'Arimo-Bold';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+}
+
+.username{
+  text-align: center;
+  font-family: 'Arimo-Bold';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+}
+
+.idusername{
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  font-family: 'Arimo-Bold';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+}
+
+.usernamesubmit{
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  width: 200px;
+  height: 45px;
+  text-align: center;
+  font-family: 'Arimo-Bold';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+}
+
+@media all and (min-width: 768px) and (max-width: 1279px) {
+  .content {
+    width: 768px;
+  }
+
+  .navigation {
+    grid-template-columns: 315px 100px 100px 150px;
+    padding: 0 15px 0 15px;
+  }
+
+  .navigation-button {
+    font-size: 38px;
+  }
+
+  .information {
+    font-size: 25px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .content {
+    width: 320px;
+    padding-top: 10px;
+  }
+
+  .navigation {
+    grid-template-columns: 130px 45px 45px 65px;
+    padding: 0px 10px 0 10px;
+  }
+
+  .navigation-button {
+    font-size: 15px;
+  }
+
+  .information {
+    padding: 10px 10px 0 10px;
+    font-size: 25px;
+  }
+
+  .field {
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(4, 60px);
+    padding-top: 10px;
+  }
+
+  .cell {
+    width: 58px;
+    height: 58px;
+  }
+
+  .size {
+    font-size: 16px;
+  }
+
+  .link-sizes {
+    margin-left: 5px;
+  }
+
+  .modalsave {
+    position: relative;
+    width: 280px;
+    top: -500px;
+    margin: auto;
+    box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+    background: white;
+  }
+}
